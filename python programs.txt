@@ -1,0 +1,499 @@
+nums=[12,75,150,180,145,525,50]
+
+
+
+for x in nums:
+ 
+  if x>500:
+     break
+  elif x>150:
+     continue
+  elif x%5==0:
+     print(x)
+    
+
+c=0
+num= int(input("Enter the number"))
+for x in str(num):
+    if x.isdigit():
+       c=c+1
+print(c)
+
+
+s=0
+    nums=int(input("Enter the number"))
+while nums!=0:
+    nums=nums//10
+    s=s+1
+print(s)
+  
+
+li =[10,20,30,40]
+
+for x in reversed(li):
+    print(x)
+    
+  
+
+li=[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
+
+for x in reversed(li):
+  print(x)
+
+
+mylist = [10,20,30,40,50,60,70,80,90,100]
+
+
+for x in mylist:
+  
+  if mylist.index(x)%2!=0:
+  
+    print(x)
+  
+
+for x in mylist[1::2]:
+  print(x, end=" ")
+
+
+fact=1
+for x in range(1,6):
+  fact=fact*x
+  print(fact)
+  
+
+import math
+for x in range(1,7):
+  result=math.pow(x,3)
+  print(math.floor(result))
+
+  
+  for x in range(1,11):
+ print(2*x)
+
+a=0;b=1
+print("0")
+print("1")
+for x in range(10):
+  c = a+b
+  print(c)
+  a=b
+  b=c
+
+n1=40
+n2=30
+
+if(n1*n2<=1000):
+  print(n1*n2)
+else:
+  print(n1+n2)
+
+cur=0
+prev=0
+sum=cur+prev
+print(sum)
+for x in range(1,10):
+ sum1=x+prev
+ print(sum1)
+ prev=x
+  
+str=input("Enter the number")
+
+for x in str[0::2]:
+  print(x)
+  
+
+str=input("Enter the number")
+
+for x in str[4:]:
+  print(x)
+  
+str=input("Enter the number")
+
+for x in str[2:]:
+  print(x)
+  
+num=[10, 20, 30, 40, 10]
+num1 = [75, 65, 35, 75, 30]
+
+if(num1[0]==num1[-1]):
+  print("true")
+else:
+  print("false")
+  
+
+li=[10,20,33,46,55]
+
+for x in li:
+  if(x%5==0):
+    print(x)
+
+str1="rajani kota";
+print(str1.split(" "))
+
+str1="rajani"
+
+for x in str1[::-1]:
+   print(x)
+
+li=[3,2,1]
+li.sort()
+print(li)
+
+What is difference between mutable and immutable in 
+
+list is mutable
+
+tuple is immutable
+
+import os 
+os.remove("file.txt")
+
+li=["rajani", "rajitha", "vasisht", "vedardh"]
+
+#we can access the elements in the list using index
+
+print(li[0])
+
+To remove the elements in the list we can use 
+print(li.pop(1))
+print(li)
+
+import numpy as np
+arr1= np.array([1,2,3,4])
+arr2=arr1[::-1]
+print(arr2)
+print(arr1[0]) # to access the array element 
+arr1[1]=7  # to update the array element
+print(arr1)
+
+
+y=np.delete(arr1,1) #deletes the elements in the array
+print(y)
+arr3= [1,2,3,4]  
+x=np.delete(arr3,2)
+print(x)
+
+li1= ["rajani", "rajitha"]
+li2=["vasisht", "vedardh"]
+
+list3=li1+li2
+print(list3)
+
+li = [2,3,4,5]
+
+import math
+for x in li:
+  y=math.pow(x,2)
+  print(int(y))
+
+difference between range and xrange
+range is available in python 2 and pyhton3
+range is less memory efficient
+range returns the list
+
+xrange is available in python2 only
+xrange is more memory efficient
+xrange is return xrangeofobjects
+
+difference between list and a tuple
+list is an ordered collection .list are mutable where you can the add the element, delete the element and update the element
+where as tuple is also ordered collection. tuple are immutable where you cannot add, delete or update the element
+list = [1,2,4]
+tuple=(1,2,4)
+
+li = [4,5,6,7]
+li.append(8)
+print(li)
+li[2]=9
+print(li)
+li.pop(1)
+print(li)
+
+tuples are faster than list because tuples are immutable
+
+#https://www.linkedin.com/pulse/python-lists-vs-numpy-arrays-mohamed-hamdy-b5e9f/
+
+Set is unordered. Set cannot contain duplicates . Whereas set is mutable. You cannot access the elements using the index.
+
+se ={1,2,3,4}
+print(se)
+#print(se[1])
+
+se.add(5)
+se.remove(3)
+print(se)
+
+for x in se:
+  print(x)
+  
+se1= {1,2,3}
+
+se2={"rajani", "rajitha"}
+
+se3={"apple","banana"}
+
+myset= se1.union(se2,se3)
+print(myset) # union is to join the set 
+
+se3= se1.difference(se2) # it will remove the items that are not there in another set  
+print(se3)
+
+myset=se1.intersection(se2) # duplicates in both the set
+print(myset)
+
+
+se1.update(se2)#update will change the original set 
+print(se1)
+
+#union and update will exclude the duplicates
+
+str= "this is rajani"
+a=str.split(' ')
+print(a)  #['this', 'is', 'rajani']
+
+tu=("this", "is", "rajani")
+word=" ".join(tu)
+print(word)  # join is used to concatenate the elements in list , tuple or set 
+
+The logical operators in python are or , and, not
+
+The top 5 functions used in python string
+
+pass is used as a placeholder
+pass is a null statement that does nothing
+
+continue will skip the current iteration
+
+python datatypes are
+Numeric --int----->(2,-3) float (2.35) ,complex-(2+3j)
+
+Sequence---
+string, list , tuple
+
+mapping
+dictionary
+
+Set type
+set 
+
+Boolean
+bool:
+
+
+immutable data types are Numeric type, string, tuple, Boolean
+
+mutable are list and dictionary
+
+
+try:
+ x=int(input("Enter the number"))
+ 
+ y=10/x
+ print(y)
+except ValueError:
+  
+  print("invalid input")
+  
+except ZeroDivisionError:
+  print("cannot divide by zero")
+  
+
+What is init?
+
+Init is a special method, also known as constructor that is automatically called when you create the object from a class. It is used to initialize the object attributes . The first argument in the init is self , which refers to the instance of the class being created.
+
+
+thisdict={
+"brand": "Ford",
+"model":"Mustag",
+"year":1964
+}
+
+dictionary is ordered, changable, dictionaries are indexed, all key and value pairs must be unique.	
+thisdict={
+"brand": "Ford",
+"model":"Mustag",
+"year":1964
+}
+
+print(thisdict)
+
+x=thisdict["brand"]
+print(x)
+
+x=thisdict.get("brand")
+print(x) # get is used to access the elements in the the dictionary
+
+
+thisdict["brand"]="Toyota"
+
+print(thisdict) # change the elements
+
+
+thisdict["color"]="red"
+print(thisdict)# add the element in the dictionary
+
+thisdict.pop("model")
+print(thisdict)  # pop is used to delete the item in the dictionary
+
+
+for x in thisdict.values():
+   print(x)
+
+for x in thisdict.keys():
+  print(x)
+  
+for x,y in thisdict.items():
+  print(x,y)
+
+difference between set and frozenset 
+
+both set and frozen set are used to store unique elements
+
+set is mutable but frozenset is not mutable
+
+my_frozenset= frozenset({1,2,3})
+print(my_frozenset)
+
+
+
+Return will terminate the function execution and returns a single value where as yield can produce a sequence of values.
+
+yield keyword provides the output and continue 
+
+return keyword means: provide output and stop.
+
+
+def square(n):
+    return n*n
+    
+    
+print(square(5))
+
+
+
+def square(n):
+    for i in range(n):
+        yield i*i
+    
+    
+result=square(5)
+for res in result:
+    print(res)
+
+In python decorators are a way to modify or extend the functionality of a function 
+Decorator is a function that takes another function as argument and returns a function
+
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello() 
+
+
+a=10
+b=20
+a,b=b,a
+print(a)
+print(b)
+
+li=['a','b','c', 'd']
+a= ",".join(li)
+print(a)
+
+
+
+li=[1,2,3,4]
+del li[2]
+print(li)
+
+li.remove(4)
+print(li)
+
+self will represent the instance of the class .which is used to access the attributes and the methods of the class 
+
+different types of variables in python
+
+instance varaibles: varaibles declared inside the init are called instance varaibles.
+static varaibles:varaibles declared outside the init are called static varaibles.
+
+class user:
+  
+  school="columbia"
+  
+  def __init__(self):
+    self.name="rajani"
+    self.age=39
+
+u=user()
+print(u.name, u.age)
+print(user.school)
+
+
+
+Different types of methods in python
+instance methods--self then it is an instance method-you have to access using object - works with instance variables  def avg(self):
+class methods--- you  are working with  class variables  then you have cls:you want to access the class varaibles you have class methods and should use
+@classmethod def getschool(cls)-- class methods works with class varaibles
+
+@static method
+static methods def info():
+		print("this is student class")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

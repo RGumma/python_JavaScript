@@ -1,0 +1,192 @@
+Implicit Wait 
+
+ div.rt-table > div.rt-tbody> div.rt-tr-group>div:nth-child(1)
+
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+
+  Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    wait.until(d -> revealed.isDisplayed());
+
+
+You may only deselect options of a multi-select
+
+https://omayo.blogspot.com/
+
+https://rahulshettyacademy.com/AutomationPractice/
+
+https://testautomationpractice.blogspot.com/
+
+
+NoSuchElement Exception- When locator is wrong you get no such element Exception 
+
+or it could be Synchronization issue also - we get no such element Exception
+
+JavascriptExecutor js = (JavascriptExecutor)driver;
+
+js.executeScript("arguments[0].scrollIntoView();", Element) 
+
+js.executeScript("window.scrollBy(0,-350)", "");using pixel 
+
+js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+build method will create an action 
+perform will complete the action 
+
+WebElement e = driver.findElement(By.xpath("//*[text()='Get started free']"))
+
+WebElement m = driver.findElement (By.xpath ("//*[contains(text(),'Get started ')]"))
+
+An iframe, or inline frame, is an HTML element that embeds another HTML document or webpage within the current document. 
+
+NosuchwindowException
+
+Element not Interactable org.openqa.selenium.ElementNotInteractableException: I applied implict wait 
+
+Invalid selector Exception 
+
+NullPointerException
+
+Number Format Exception
+
+
+
+There will be no balance between the script and the webpage so the code will throw the exception. 
+
+After creating the driver instance you add the implicit wait .
+
+Implict wait is added once and it is applied to all the elements.
+
+Explict wait is element specific
+
+ 
+
+Fluent wait will have polling time  and ignore the exceptions
+Fluent wait is also element specific
+
+If you specify 30 seconds for an element to be present on the page, checking for its presence once every 5secs.
+
+
+WebDriverManager is an open-source Java library that automates the management of Selenium WebDriver drivers.
+
+getSize()-> will give the height and width of the element. 
+
+TestNG is a testing framework that is used with selenium to automate the web application testing
+
+An open-source framework that's inspired by JUnit and NUnit. It offers features like annotations, test configuration, and data-driven testing. 
+
+Advantages of TestNG
+
+TestNG provides parallel execution of test methods
+It allows to define dependency of one test method over the other method.
+It allows to assign priority to the test methods
+It allows grouping of test methods 
+It supports for parametrizing test cases using @ parameter annotation
+It allows data driven testing using @data provider annotation
+It has different assertions that helps in checking the expected results and actual results.
+Detailed HTML Reports.
+
+Annotations are
+
+
+@Before Suite
+@Before Test
+@Before class
+@Before Method
+@Test
+@After Method
+@After class
+@After Test
+@After Suite
+@BeforeGroup
+@After group
+
+
+@Data Provider
+@Parameters
+@Listerners
+
+https://saucelabs.com/resources/blog/selenium-tips-css-selectors
+
+
+
+Arrange the testNG.xml tags from parent to child
+<we have to define xml schema>
+xml version =1.0 encoding='UFT
+!Doctype Suite we have to define
+<Suite>
+<Test>
+<classes>
+<class>
+<Methods>
+
+How to create TestNg.xml file
+
+@Before Test will be called only once before any test Method
+
+@BeforeMethod will be called multiple time before every test method 
+
+@Beforeclass is at the class level  this annotated method will be run before the first test method in the current is invoked
+
+@Before Test - The annotated method will be run before any test method belonging to the classes inside <test> tag is run 
+
+TestNg we use testng.xml to configure the complete test suite in a single file. (it is the Runner class)
+
+
+Using ITestListner (it is an interface) we can implement our own listner class
+
+
+Assertions will help to verify the condition of the test .Assertion is the validation point 
+
+Two kind of assertions: 
+Hard Assertions: you can access from the assert class. There is some limitation in hard assert 
+
+Soft Assertions: we can access from the object soft assert class 
+
+softAssert sa= softAssert();
+
+@Test (expectedExceptions = <Exceptionclass name>.class)
+
+It will not mark the test case fail. 
+
+Parallel execution will reduce the time. 
+
+
+Data provider method what is return it always return 2 dimensional object data of array 
+
+We no need to run all the test with the help of dependsonMethods 
+
+
+Two ways we can parameter the using @Parameters and @DataProvider
+
+data driving testing can be done using @dataProvider
+
+
+
+https://www.softwaretestinghelp.com/java-coding-interview-programs/
+
+
+ https://www.linkedin.com/jobs/view/4045794082
+
+https://www.linkedin.com/jobs/search/?currentJobId=4045794082&keywords=qa%20automation%20tester&origin=BLENDED_SEARCH_RESULT_NAVIGATION_JOB_CARD&originToLandingJobPostings=4042911516%2C4042612021%2C4043557797
+
+Sanity(Basic functionality)
+Regression(
+Functional(sanity and regression)
+
+suite>
+  <test>
+    <parameter name="parameter1" value="test1"/>
+    <parameter name="parameter2" value="Test2"/>
+    <groups> 
+        <run>
+           <include name="group1"/>
+        </run>
+    </groups>
+  </test>
+</suite>
+
+If you want to run a particular testcase 10 times then we can make invocation time =10
+
+
+

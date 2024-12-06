@@ -1,0 +1,28 @@
+
+playwright interview questions:
+
+
+locators are : xpath, css =input#email, input[id=email], page.locator("text='sauce labs Backpack'").click()
+
+text='textValue'-case sensitive text, text='textValue' -Noncasesensitive text
+page.locator("id=add-to-cart-saucelabs-backpack")
+page.locator("data-test=add-to-cart-sauce-labs-backpack")
+
+
+
+
+
+13.what is the difference between element handle and the locator
+
+
+
+
+14. how can you wait for an element to appear in playwright
+
+playwright provides methods to explicity wait for elements like waitforselector , waitfortimeout
+
+wish infinity
+
+15. Explain the role of hasText and has Attribute selector in playwright
+
+hasText:

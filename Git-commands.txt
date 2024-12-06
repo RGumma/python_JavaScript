@@ -1,0 +1,77 @@
+Git commands
+
+---To see the difference in the file content between working directory and staging area
+
+git diff filename
+
+---To see the difference in the file content between working directory and last commit
+
+last commit referred using HEAD
+
+git diff head filename
+
+---To see the difference in the file content between stagging area and last commit
+
+git diff --staged HEAD filename
+
+
+--To see the difference between in the file contents between the specific commit and working directory
+
+git log --online
+
+git diff commit-id filename
+
+ git diff 1fb14c1 abc.txt
+
+
+
+To see the difference in the file content between specific commit and stagging area
+
+git diff --staged 1fb14c1 
+
+git ls will gives you all the files
+
+git ls-files will give you all the files in the staging area
+
+git files 
+
+
+To Remove the files from both staging and working directory
+
+git rm filename.txt
+
+
+-- To remove all the files from staging and working directory
+
+git rm -r. 
+
+-- To remove the files from only from staging
+
+git rm --cached filename.txt
+
+--To remove the files only from the working directory
+
+rm filename.txt
+
+---To discard the unstage changes in the tracked files of working directory we use checkout command 
+
+git checkout -- filename.txt
+
+
+only for the working directory 
+
+to discard the unstaged changes 
+
+In the tracked files.
+
+
+
+
+
+
+
+
+
+
+
+
