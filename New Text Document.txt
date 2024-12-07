@@ -1,0 +1,436 @@
+nums=[12,75,150,180,145,525,50]
+
+
+for x in nums:
+  if x>500:
+     break
+  elif x>150:
+     continue
+  elif x%5==0:
+     print(x)
+    
+
+c=0
+num= int(input("Enter the number"))
+for x in str(num):
+    if x.isdigit():
+       c=c+1
+print(c)
+
+
+s=0
+    nums=int(input("Enter the number"))
+while nums!=0:
+    nums=nums//10
+    s=s+1
+print(s)
+  
+
+li =[10,20,30,40]
+
+for x in reversed(li):
+    print(x)
+    
+  
+
+li=[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
+
+for x in reversed(li):
+  print(x)
+
+
+mylist = [10,20,30,40,50,60,70,80,90,100]
+
+
+for x in mylist:
+  
+  if mylist.index(x)%2!=0:
+  
+    print(x)
+  
+
+for x in mylist[1::2]:
+  print(x, end=" ")
+
+
+fact=1
+for x in range(1,6):
+  fact=fact*x
+  print(fact)
+  
+
+import math
+for x in range(1,7):
+  result=math.pow(x,3)
+  print(math.floor(result))
+
+  
+  for x in range(1,11):
+ print(2*x)
+
+li =[100,200,300,400,500]
+
+li.reverse()
+
+print(li)
+
+
+list1 = ["M", "na", "i", "Ke"]
+list2 = ["y", "me", "s", "lly"]
+
+l=[]
+
+for x in range(0,min(len(list1), len(list2))):
+  
+  l.append(list1[x]+list2[x])
+  
+print(l)
+
+
+list=[1, 2, 3, 4, 5, 6, 7]
+import math
+for x in list:
+  
+  y=math.pow(x,2)
+  z=math.floor(y)
+  print(z)
+ 
+ 
+list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+
+li=[]
+list3=list1+list2
+
+print(list3)
+
+
+for x in range(0,min(len(list1),len(list2))):
+  li.append(list1[x]+list2[x])
+  
+  print(li)
+  
+
+list1 = [10, 20, 30, 40]
+list2 = [100, 200, 300, 400]
+
+
+for x, y in zip(list1,list2[::-1]):
+  print(x,y)
+
+
+list1 = [5, 20, 15, 20, 25, 50, 20]
+
+for x in list1:
+  
+  if x==20:
+    
+    list1.remove(x)
+    
+    print(list1)
+
+
+https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-4-math-practice-test.pdf
+
+
+st ="rajani"
+vowels='aeiouAEIOU'
+count=0
+for x in st:
+    if x in vowels:
+        count=count+1
+print(count)
+
+fact=1
+for x in range(1,6):
+    fact=fact*x
+print(fact)
+   
+
+li=[5,8,7,6]
+max1=li[0]
+for x in li:
+    if x>max1:
+        max1=x
+print(max1)
+
+
+#0 1 1 2 3 5 7 
+
+print(0)
+print(1)
+a=0;b=1
+for x in range(1,6):
+    c=a+b
+    print(c)
+   a=b;b=c
+
+
+st="This is Rajani"
+print(len(st))
+#st1=st.split(' ')
+count=0
+for x in st:
+    if(x.isalpha()):
+        count=count+1
+print(count)
+
+
+num=5
+flag=False
+for x in range(2,num):
+  if(num%x==0):
+     flag=True
+     break
+
+if(flag==True):
+    print("not a prime no")
+else:
+    print("prime no")
+
+
+li=[1,2,3,4,5]
+li.append(6)
+print(li)
+li.remove(3)
+print(li)
+print(li[2])
+print(li)
+
+str= "Hello world"
+st=str.split(" ")
+print(st)
+
+newjoin="-".join(st)
+print(newjoin)
+newstring= str.upper()
+print(newstring)
+
+replaceword=newstring.replace('WORLD','universe')
+print(replaceword)
+
+
+total=0
+num =123
+strnum = str(num)
+for x in range(len(strnum)):
+  total+=int(strnum[x])
+print(total)
+
+
+li =[10,20,30,40,50]
+sum=0
+for x in li:
+  sum=sum+x
+  result=sum/len(li)
+print(result)
+
+
+st="Rajani"
+myset=set()
+for x in st:
+    myset.add(x)
+    se= " ".join(myset)
+print(se)
+
+
+num=6
+add=0
+for x in range(1,num):
+   if(num%x==0):
+      add+=x
+print(add)
+
+if(add==num):
+  print("its a perfect number")
+else:
+  print("Not a perfect number")
+
+  
+num=6
+add=0
+for x in range(1,num):
+   if(num%x==0):
+      add+=x
+print(add)
+
+if(add==num):
+  print("its a perfect number")
+else:
+  print("Not a perfect number")
+
+total=0
+num =543
+strnum = str(num)
+for x in range(len(strnum)):
+  total+=int(strnum[x])
+print(total)
+
+
+li =[10,20,30,40,50]
+sum=0
+for x in li:
+  sum=sum+x
+  result=sum/len(li)
+print(result)
+
+
+st="Rajani"
+myset=set()
+for x in st:
+    myset.add(x)
+    se= " ".join(myset)
+print(se)
+
+
+num=6
+add=0
+for x in range(1,num):
+   if(num%x==0):
+      add+=x
+print(add)
+
+if(add==num):
+  print("its a perfect number")
+else:
+  print("Not a perfect number")
+  
+li=[20,10,40,50,30]
+for x in li:
+  a=sorted(li,reverse=True)
+print(a)
+print(a[1])
+
+
+
+def add(*args):
+  sum=0
+  for x in args:
+    sum=sum+x
+    print(sum)
+
+
+add(2,3,4,5)
+
+
+
+
+def person(**kwargs):
+  for key,value in kwargs.items():
+    print(key,value)
+  
+    
+
+person(name="rajani",age=20,city="Mckinney")
+
+
+
+def sum(a,b):
+  print(a+b)
+  
+
+sum(4,5)
+
+
+
+def seq_numbers(n):
+  for i in range(n):
+   yield i*i
+    
+    
+result=seq_numbers(5)
+for res in result:
+  print(res)
+
+
+li = [1,2,3,4]
+
+li.append(5)
+print(li)
+
+li.insert(1,10)
+print(li)
+
+li1= [1,2,3,4,5]
+li2=li+li1
+print(li2) 
+
+
+str="madam"
+rev=" "
+for x in str:
+  rev=x+rev
+  print(rev)   
+  
+l=[]
+
+for x in range(2000,3201):
+  if(x%7==0 and x%5!=0):
+    l.append(str(x))
+    a=",".join(l)
+print(a)
+
+#string.join connects elements inside list of strings, not ints.
+
+d=dict()
+for x in range(1,9):
+  d[x]=x*x
+print(d)
+
+
+n=input("Enter the values")
+l=n.split(",")
+t=tuple(l)
+print(l)
+print(t)
+
+
+d=dict()
+for x in range(1,9):
+  d[x]=x*x
+print(d)
+  
+n=input("Enter the values")
+
+
+
+#n=int("Enter the input")
+items = [x for x in n.split(',')]
+
+items.sort()
+print(','.join(items))
+
+import math
+total=0
+num=9474
+st=str(num)
+n= len(st)
+for x in st:
+  cube= math.pow(int(x),n)
+  total+= int(cube)
+  print(total)
+
+if(num==total):
+  print(num,"is an armstrong number")
+else:
+  print("not an armstrong number")
+
+ num= int(input("Enter the number"))
+sum=0
+for x in range(1,num+1):
+  sum=sum+x
+  print(sum)
+
+
+li=[20,30,40,50]
+l=len(li)
+print(l)
+sum=0
+for x in li:
+  sum=sum+x/l
+  print(sum)
+
+
+
+
+   
